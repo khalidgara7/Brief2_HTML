@@ -1,15 +1,80 @@
+  
+  /* ----------font----------- */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap');
+
+
+
+  /* ----------general style----------- */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+
+  /* ----------header section----------- */
+
 .header{
     display: flex;
     justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    border-bottom: solid 1px #220500;
 
 }
 .header_home{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    width: 80%;
     
 
 }
-.logo{
+.rightSide{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+.create_account{
+     padding-right: 10px; 
+}
+
+.rightSide div{
+    display: flex;
+    align-items: center;
+}
+.border-sign{
+    border-right: 1px solid #0d0c0c;
+    padding-right: 5px;
+}
+.create_account{
+    padding-left: 5px;
+}
+
+.accessoires{
+    display: flex;
+    
+}
+.accessoire-element{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border: 1px solid #0d0c0c;
+
+}
+.accessoires img{
+    
+}
+.accessoire-name{
+    adding-left: 50px;
+    padding-right: 290px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    color: #94A3B8;
+}
+.accessoire-element img{
+    padding-left: 10px;
 }
