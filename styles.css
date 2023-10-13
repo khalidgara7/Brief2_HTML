@@ -112,7 +112,21 @@ font-weight: 400;
 .item-price {
     font-size: 3.5rem;
     margin-left: 15px;
-} 
+    
+
+}
+.span-relative{
+    position: relative;
+}
+.item-price .posetion-span{
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    transform: rotate(10deg);
+}
 .item-price span{
     font-size: 2rem;
     color: #475569;
@@ -210,14 +224,12 @@ main{
 }
 .product-container{
     width: 85vw;
-    
 }
 .side-bar-left{
     width: 15vw;
 }
 .main-product{
     display: flex;
-
 
 }
 .sort-bar-product{
@@ -226,7 +238,8 @@ main{
 }
 .checkbox{
     display: flex;
-    grid-column:;
+    grid-column: auto;
+    
 }
 .radio-btn-product{
     display: flex;
@@ -245,4 +258,21 @@ main{
 .check{
     width: 200px;
     height: 30px;
+}
+.All_Check{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.All_Check input{
+    accent-color: yellow;
+}
+/*---------------page 3----------*/
+.image_article{
+    
+    margin-top: 15px;
+}
+.div_article{
+   
 }
