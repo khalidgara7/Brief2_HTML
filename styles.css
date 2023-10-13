@@ -90,23 +90,22 @@ font-weight: 400;
 .accessoire-element img{
     padding-left: 10px;
 }
-s{
-    font-size: 20px;
-    color: red;
-    
-}
+
 .accessoire-left{
     width: 30%;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+    
 }
 .best-remise{
    display: flex;
    justify-content: space-between;
    margin-top: 20px;
+   gap: 1%;
+}
+
+.imageproduct{
+    width: 100%;
 }
 .remise-item{
-    width: 404px;
-    height: 485px;
     border-radius: 5px;
     background: #E2E8F0;
 }
@@ -172,6 +171,10 @@ s{
     margin-left: 15px;
     margin-right: 15px;
 }
+.best-remise{
+    width: 100%;
+}
+
 .best-product{
     margin-top: 40px;
     margin-bottom: 20vh;
@@ -199,10 +202,45 @@ footer{
     gap: 50px;
     
 }
-/*--------la page 2--------*/
+/*------------------------ page 2-----------------------*/
 main{
     margin-left: 20px;
 
+
+}
+.product-container{
+    width: 85vw;
+    
+}
+.side-bar-left{
+    width: 15vw;
+}
+.main-product{
+    display: flex;
+
+
+}
+.sort-bar-product{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+    display: flex;
+    grid-column:;
+}
+.radio-btn-product{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.radio-btn-product > label {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 6px;
+    border: solid 1px black;
+    border-radius: 3px;
+    padding: 5px 20px;
 }
 .check{
     width: 200px;
