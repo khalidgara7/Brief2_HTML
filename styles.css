@@ -482,7 +482,7 @@ main{
 .discreption_section p{
     font-size: 2.5rem;
 }
-.text-img{
+.text-img, .half-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
@@ -491,4 +491,158 @@ main{
 .text-img img{
     width: 100%;
     grid-column: 2;
+}
+/* -----------section3--------*/
+.div_review .review_stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #FACC15;
+}
+.review_stars  span{
+    font-size: 2rem;
+}
+.div_review h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.div_review h5{
+    text-align: center;
+    font-size: 2rem;
+    font-family: normal;
+}
+.statistique-reviews{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.statistique-reviews span{
+    font-size: large;
+}
+.statistique_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.static_rview{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.orangr-80{
+    background-color: orange;
+    width: 80%!important;
+    height: 1rem!important;
+}
+.brown-20{
+    background-color: brown;
+    width: 20%!important;
+    height: 0.4rem!important;
+}
+.circel{
+    background-color: rgb(80, 85, 90);
+    width: 5rem !important;
+    height: 5rem !important;
+    border-radius: 50%;
+}
+.user_comnt{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.user_comnt_stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.commentaire{
+    font-size: 2rem;
+}
+.user_comnt h2{
+    font-size: 2rem;
+}
+
+.recommandend_product h6{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.recommandend_product{
+    margin: 2rem 0;
+    
+}
+.panier{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    margin-bottom: 14rem;
+}
+.panier_product{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+.rectangle{
+    width: 20rem;
+    height: 13rem;
+    background-color: #D9D9D9;
+}
+.panier_product_details{
+    display: flex;
+    gap: 2rem;
+}
+.panier_product_details h4{
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+}
+.panier_product_details h5{
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+.panier_product_details button{
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem ;
+    border: none;
+}
+.heart_trash img{
+    width: 2.5rem !important;
+    height: 2.2rem !important ;
+}
+
+.panier > div {
+    background: rgba(217, 217, 217, 0.22);
+}
+.confirmation_shopping{
+    padding: 3rem;
+}
+.confirmation_shopping > h4{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.livraison, .shop, .total{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+.confirmation_shopping button{
+    width: 100%;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #37D95B;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.confirmation_shopping span, 
+.confirmation_shopping h2,
+.confirmation_shopping p
+{
+    font-size: 3rem;
 }
