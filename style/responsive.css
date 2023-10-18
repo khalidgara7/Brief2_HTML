@@ -1,0 +1,13 @@
+@media (max-width: 768px){
+    .input_all_info{
+        display: block;
+     }
+     .input_info{
+        width: 100%;
+     }
+     .map_container iframe{
+        width: 100%;
+        margin-top: 10%;
+        height: 60vh;
+     }
+}
