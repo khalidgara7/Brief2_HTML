@@ -54,7 +54,11 @@ a{
 .rightSide{
     display: flex;
     align-items: center;
-    
+}
+
+.sidebare{
+    display: none;
+    font-size: 2rem;
 }
 
 .rightSide div{
@@ -223,6 +227,7 @@ footer{
 /*------------------------ page 2-----------------------*/
 main{
     margin-left: 20px;
+    margin-right: 2rem;
 }
 .product-container{
     width: 85vw;
