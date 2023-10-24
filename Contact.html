@@ -44,12 +44,16 @@
             </div>
             <div class="input_all_info">
               <form  class="input_info">
-                <input type="text" placeholder="First Name" required />
-                <input type="text" placeholder="Last Name" required />
-                <input type="text" placeholder="Phone Number" required />
-                <input type="email" placeholder="Email" required />
-                <textarea name="message"  id="message-contact" cols="30" rows="5" placeholder="message"></textarea>
-                <button class="send_btn">SEND</button>
+                <input id="first_name" type="text" placeholder="First Name" required />
+                <input id="last_name" type="text" placeholder="Last Name" required />
+                <input id="phone_number" type="text" placeholder="Phone Number" required />
+                <input id="email" type="email" placeholder="Email" required />
+                <textarea itemid="message" name="message"  id="message-contact" cols="30" rows="5" placeholder="message"></textarea>
+                <div class="btn_send_show" style="display: flex; justify-content: space-between;">
+                    <button onclick="check()" class="send_btn">SEND</button>
+                    <button onclick="showUser()" class="send_btn">Show data user</button>
+                </div>
+                
               </form>
               <div class="map_container">
                   <iframe
@@ -66,6 +70,7 @@
             </div>
     </section>
 
+
     <footer>
         <div class="infos">
           <a href="#About.html" class="footer-elements">About</a>
@@ -76,6 +81,6 @@
     </footer>       
 
 
-      
+      <script src="./javascript/script.js"></script>
 </body>
 </html>

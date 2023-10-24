@@ -739,7 +739,7 @@ main{
     text-align: center;
     cursor: pointer;
     transition: 0.8s;
-    width: 50%;
+    width: 45%;
  }
  .primary-btn:hover{
     color: white ;

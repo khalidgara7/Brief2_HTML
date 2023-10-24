@@ -1,5 +1,6 @@
 
 // --------------- hide et afficher bar de accessoir sur la page index-----------
+
 let buttons = document.getElementsByClassName("accessoire-element");
 let reduitButton = document.getElementById("reduit_btn");
 
@@ -15,6 +16,7 @@ reduitButton.addEventListener("click", function () {
 });
 
 // ------------------ ajouter  panier-------------
+
 function handlePanier(){
     let panierContent = document.getElementById("panier_content");
     if(panierContent.classList.contains("hidden")){
@@ -23,4 +25,3 @@ function handlePanier(){
         panierContent.classList.add("hidden")
     }
 }
-
