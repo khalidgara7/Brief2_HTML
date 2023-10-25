@@ -74,10 +74,12 @@ a{
 }
 .btn-retui{
     background-color: linen;
-    user-select: none;
+    
+    /* user-select: none; */
 }
 .accessoire-element{
     display: flex;
+
     align-items: center;
     padding-left: 15px;
     padding-top: 10px;

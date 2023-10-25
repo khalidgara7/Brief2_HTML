@@ -21,19 +21,20 @@
      .sidebare{
       display: inline;
   }
+    
   /* ------------------------index_page------------------------- */
       .best-remise{
          flex-wrap: wrap;
       }
       .accessoires{
          margin: 0;
-         
+         flex-wrap: wrap;
       }
-      .accessoire-left{
+      /* .accessoire-left{
          display: none;
-      }
+      } */
       .hero-Img img{
-         width: 100vw;
+         width: 100%;
       }
    /* --------------------product list page-------------------- */
       .main-product{

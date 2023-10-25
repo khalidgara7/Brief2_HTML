@@ -25,3 +25,4 @@ function handlePanier(){
         panierContent.classList.add("hidden")
     }
 }
+
