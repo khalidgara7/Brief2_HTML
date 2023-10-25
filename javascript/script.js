@@ -11,37 +11,54 @@ let inc = document.getElementById("increment");
 const Qnt = document.getElementById("Quantite");
 let prix = document.getElementById("prix");
 
-let users = JSON.parse(localStorage.getItem("object")) || {};
-let F, L, Ph, E, M;
-let obj = [];
+let users = JSON.parse(localStorage.getItem("object")) || [];
+
 function check() {
-  let obj1 = {
+  let user = {
     F: First_Name.value,
     L: Last_Name.value,
     Ph: Phone_Number.value,
     E: Email.value,
     M: message_contact.value,
   };
-  obj.push(obj1);
-  localStorage.setItem("object", JSON.stringify(obj));
+  users.push(user);
+  console.log(users);
+  localStorage.setItem("object", JSON.stringify(users));
 }
 
-var test = "";
-let storedData = localStorage.getItem("object");
-var tableContent = "";
+
 function showUser() {
+  
+  var tableContent = "";
+
   for (let index = 0; index < users.length; index++) {
-    users[index][0].split(",");
+    //users[index][0].split(",");
     let arrr = users[index];
+  
     tableContent += `
     <tr>
-        <th>${arrr[0]}</th>
-        <th>${arrr[1]}</th>
-        <th>${arrr[2]}</th>
-        <th>${arrr[3]}</th>
-        <th>${arrr[4]}</th>
+        <th>${arrr.F}</th>
+        <th>${arrr.L}</th>
+        <th>${arrr.Ph}</th>
+        <th>${arrr.E}</th>
+        <th>${arrr.M}</th>
     </tr> `;
   }
+
+  document.querySelector("#showContactData table tbody").innerHTML = tableContent;
+  showDivContact();
+}
+
+function showDivContact() {
+  let div = document.getElementById("showContactData");
+  div.classList.remove("hideContactDetail");
+  div.classList.add('showContactData');
+}
+
+function hideDivContact() {
+  let div = document.getElementById("showContactData");
+  div.classList.add("hideContactDetail");
+  div.classList.remove('showContactData');
 }
 
 function validateEmail(email) {

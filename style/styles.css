@@ -74,7 +74,7 @@ a{
 }
 .btn-retui{
     background-color: linen;
-    
+
     /* user-select: none; */
 }
 .accessoire-element{
@@ -752,4 +752,29 @@ main{
  .map_container p{
     font-size: 2rem;
     padding-top: 3%;
+ }
+
+ #showContactData{
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    z-index: 10;
+    min-width: 80vw;
+    min-height: 80vh;
+ }
+ .custom_style{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: linen;
+ }
+ #showContactData th{
+    padding: .4rem;
+ }
+
+ .hideContactDetail {
+    display: none;
+ }
+
+ .showContactDetail {
+    display: none;
  }
