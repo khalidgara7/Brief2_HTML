@@ -30,9 +30,10 @@
          margin: 0;
          flex-wrap: wrap;
       }
-      /* .accessoire-left{
-         display: none;
-      } */
+      .accessoire-left{
+         width: 100%;
+         
+      }
       .hero-Img img{
          width: 100%;
       }

@@ -6,10 +6,6 @@ let Phone_Number = document.querySelector("#phone_number");
 let Email = document.querySelector("#email");
 let message_contact = document.querySelector("#message-contact");
 // -è----------------
-let dec = document.getElementById("decrement");
-let inc = document.getElementById("increment");
-const Qnt = document.getElementById("Quantite");
-let prix = document.getElementById("prix");
 
 let users = JSON.parse(localStorage.getItem("object")) || [];
 
@@ -68,15 +64,20 @@ function validateEmail(email) {
 
 //--------------- incre/decre---------------------
 
-function decrementEvent() {
+function decrementEvent(quantiteId, prixId, prixProduit) {
+  const Qnt = document.getElementById(quantiteId);
+  const prix = document.getElementById(prixId);
+
   if (Qnt.innerText > 1) {
     Qnt.innerText = parseInt(Qnt.innerText) - 1;
-    prix.innerText = parseInt(prix.innerText) - 1900;
-    console.log(Qnt.innerText, prix.innerText);
+    prix.innerText = parseInt(prix.innerText) - prixProduit;
   }
 }
-function incrementEvent() {
+function incrementEvent(quantiteId, prixId, prixProduit) {
+  const Qnt = document.getElementById(quantiteId);
+  const prix = document.getElementById(prixId);
+
   Qnt.innerText = parseInt(Qnt.innerText) + 1;
-  prix.innerText = parseInt(prix.innerText) + 1900;
-  console.log(Qnt.innerText, prix.innerText);
+  prix.innerText = parseInt(prix.innerText) + prixProduit;
 }
+
